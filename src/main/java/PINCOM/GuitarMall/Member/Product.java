@@ -1,5 +1,6 @@
 package PINCOM.GuitarMall.Member;
 
+//상품 도메인
 public class Product {
 
     private String productId;
