@@ -1,4 +1,4 @@
-package PINCOM.GuitarMall.Product;
+package PINCOM.GuitarMall.product;
 
 import lombok.Getter;
 import lombok.Setter;
