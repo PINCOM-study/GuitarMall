@@ -1,4 +1,4 @@
-package PINCOM.GuitarMall.Member;
+package PINCOM.GuitarMall.member;
 
 //회원 도메인
 public class Member {

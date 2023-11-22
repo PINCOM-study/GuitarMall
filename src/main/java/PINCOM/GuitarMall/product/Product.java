@@ -1,4 +1,4 @@
-package PINCOM.GuitarMall.Product;
+package PINCOM.GuitarMall.product;
 
 //상품 도메인
 public class Product {

@@ -1,4 +1,4 @@
-package PINCOM.GuitarMall.Order;
+package PINCOM.GuitarMall.order;
 
 //주문 도메인
 public class Order {
