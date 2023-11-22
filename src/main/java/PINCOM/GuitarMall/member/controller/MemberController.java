@@ -12,6 +12,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @RequiredArgsConstructor
 public class MemberController {
 
+    //test용 주석
     private final MemberService memberService;
 
     @GetMapping("")
