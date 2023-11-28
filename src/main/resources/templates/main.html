@@ -7,7 +7,11 @@
 <body>
 
     <h2>메인화면</h2>
-    <div>[[${username}]] [[${message}]]</div>
+    <div>로그인한 사용자: [[${username}]]</div>
 
 </body>
+<script th:inline="javascript">
+    var message = [[${message}]];
+    if (message) alert(message);
+</script>
 </html>

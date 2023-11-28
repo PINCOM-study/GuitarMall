@@ -32,9 +32,9 @@ public class MemberServiceImpl implements MemberService {
     @Transactional(readOnly = true)
     public String login(MemberDto memberDto) {
         Optional<Member> member = memberRepository.findById(memberDto.getUsername());
-        if (member.isEmpty()) return "아이디가 없습니다";
+        if (member.isEmpty()) return "username";
         String encodedPassword = passwordEncoder.encode(member.get().getEmail(), memberDto.getPassword());
-        if (member.get().getPassword().equals(encodedPassword)) return "로그인 성공!";
-        else return "비밀번호가 틀립니다";
+        if (member.get().getPassword().equals(encodedPassword)) return "";
+        else return "password";
     }
 }
