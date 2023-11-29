@@ -1,21 +1,30 @@
 package PINCOM.GuitarMall.product.model;
 
-import jakarta.persistence.Entity;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 //상품 도메인
-@Getter
-@Setter
-public class Product {
 
-    private String productId;
+
+@Entity
+@Data
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name ="DTYPE")
+@NoArgsConstructor
+@AllArgsConstructor
+public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productId;
     private String name;
-    private String category;
-    private int Price;
+    private int price;
     private String brand;
     private long unitsInStock;
     private String releaseDate;
     private String national;
 
+    private String category;
 }
+
+
+
