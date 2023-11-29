@@ -1,5 +1,6 @@
-package PINCOM.GuitarMall.product;
+package PINCOM.GuitarMall.product.model;
 
+import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
