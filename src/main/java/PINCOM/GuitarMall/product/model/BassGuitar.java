@@ -8,5 +8,5 @@ import lombok.Data;
 @Data
 @DiscriminatorValue("bass_guitar")
 public class BassGuitar extends Product{
-    private String bassGuitarField;
+
 }

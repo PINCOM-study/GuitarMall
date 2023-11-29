@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 등록</title>
+</head>
+<body>
+
+<h2>상품 등록</h2>
+
+<form action="/add_product" method="post">
+
+
+  <!-- 상품명 입력 폼 -->
+  <label for="name">상품명:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+
+  <!-- 가격 입력 폼 -->
+  <label for="price">가격:</label>
+  <input type="number" id="price" name="price" required>
+  <br>
+
+  <!-- 브랜드 입력 폼 -->
+  <label for="brand">브랜드:</label>
+  <input type="text" id="brand" name="brand" required>
+  <br>
+
+  <!-- 재고량 입력 폼 -->
+  <label for="unitsInStock">재고량:</label>
+  <input type="number" id="unitsInStock" name="unitsInStock" required>
+  <br>
+
+  <!-- 출시일 입력 폼 -->
+  <label for="releaseDate">출시일:</label>
+  <input type="date" id="releaseDate" name="releaseDate" required>
+  <br>
+
+  <!-- 국가 입력 폼 -->
+  <label for="national">국가:</label>
+  <input type="text" id="national" name="national" required>
+  <br>
+
+  <!-- 카테고리 입력 폼 -->
+  <label for="category">카테고리:</label>
+  <input type="text" id="category" name="category" required>
+  <br>
+
+  <!-- 상품 등록 버튼 -->
+  <button type="submit">상품 등록</button>
+</form>
+
+</body>
+</html>
