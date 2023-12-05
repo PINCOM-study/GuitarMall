@@ -23,4 +23,8 @@
     </form>
 
 </body>
+<script th:inline="javascript">
+    var message = [[${message}]];
+    if (message) alert(message);
+</script>
 </html>

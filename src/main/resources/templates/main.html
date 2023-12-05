@@ -7,7 +7,12 @@
 <body>
 
     <h2>메인화면</h2>
-    <div>로그인한 사용자: [[${username}]]</div>
+    <div>
+        <span> 로그인한 사용자: [[${username}]] </span>
+        <form action="/logout" method="post">
+            <button type="submit"> 로그아웃 </button>
+        </form>
+    </div>
 
 </body>
 <script th:inline="javascript">
