@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+</head>
+<body>
+
+<h2>Product List</h2>
+
+<table border="1">
+  <thead>
+  <tr>
+    <th>Product name</th>
+    <th>Price</th>
+    <th>Brand</th>
+    <th>Inventory</th>
+    <th>Release Date</th>
+    <th>Country</th>
+    <th>Category</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- Loop through the product list and add rows to the table -->
+  <tr th:each="product : ${products}">
+    <td th:text="${product.name}"></td>
+    <td th:text="${product.price}"></td>
+    <td th:text="${product.brand}"></td>
+    <td th:text="${product.unitsInStock}"></td>
+    <td th:text="${product.releaseDate}"></td> <!-- Date를 String으로 직접 표시 -->
+    <td th:text="${product.national}"></td>
+    <td th:text="${product.category}"></td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
